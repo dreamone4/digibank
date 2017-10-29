@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,76 @@
     <script src="https://unpkg.com/vue"></script>
 
 </head>
+
 <body>
 
-    <div id="app">
-        {{ message }}
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h1 class="display-3">Digibank</h1>
+            </div>
+            <div class="col-sm-12">
+                <h2>Sign up
+                    <small class="text-muted">for digital banking</small>
+                </h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="lead">
+                    Fill in your information, and get access to Digibank online banking within two minutes.
+                </p>
+                <p>
+                    <img class="img-fluid" src="http://reneemullingslewis.com/wp-content/uploads/2014/08/woman-smiling.png" alt="">
+                </p>
+            </div>
+            <div class="col-sm-6">
+
+                <form id="signupApp">
+                    <fieldset>
+                        <legend>Customer information</legend>
+                        <div class="form-group">
+                            <label for="customerName">Full name</label>
+                            <input type="text" class="form-control" id="customerName" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerEmail">Email address</label>
+                            <input type="email" class="form-control" id="customerEmail" placeholder="Enter email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerPassword">Choose a password</label>
+                            <input id="customerPassword" class="form-control" type="password" aria-describedby="passwordHelp">
+
+                            <small id="passwordHelp" class="form-text text-muted">Password should have a minimum of 8 characters</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="customerPassword2">Confirm your password</label>
+                            <input id="customerPassword2" class="form-control" type="password">
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary float-right">Register</button>
+                </form>
+            </div>
+        </div>
+
+
     </div>
+
     <script src="app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
